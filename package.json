@@ -1,0 +1,30 @@
+{
+  "name": "piral-vite8-cjs-repro",
+  "private": true,
+  "workspaces": [
+    "apps/shell",
+    "pilets/table-one",
+    "pilets/table-two"
+  ],
+  "scripts": {
+    "build:shell": "npm run build --workspace @repro/shell",
+    "build:pilets": "npm run build --workspace table-one && npm run build --workspace table-two && node scripts/assemble-feed.mjs",
+    "build": "npm run build:shell && npm run build:pilets",
+    "build:baseline": "npm run build",
+    "build:patched": "node scripts/build-patched.mjs",
+    "start": "node scripts/serve.mjs",
+    "start:patched": "REPRO_SHELL_DIST=apps/shell/dist/patched/release node scripts/serve.mjs",
+    "dev": "npm run build:shell && npm run build:pilets && npm run debug --workspace @repro/shell",
+    "inspect": "node scripts/inspect-bundles.mjs",
+    "inspect:patched": "REPRO_PILET_DIR=dist/patched node scripts/inspect-bundles.mjs",
+    "versions": "node scripts/versions.mjs",
+    "test:repro": "node scripts/browser-repro.mjs",
+    "test:patched": "REPRO_CASE=patched REPRO_SHELL_DIST=apps/shell/dist/patched/release node scripts/browser-repro.mjs",
+    "compare:controls": "node scripts/compare-controls.mjs",
+    "record:evidence": "node scripts/record-evidence.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1",
+    "rolldown": "1.2.15"
+  }
+}

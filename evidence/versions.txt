@@ -1,0 +1,12 @@
+Command: npm run record:evidence
+Node: v24.15.0
+npm: npm/11.20.0
+piral-cli: 1.10.3
+piral-cli-vite8: 1.0.0
+vite: 8.3.5
+rolldown: 1.2.15
+piral: 1.12.4
+piral-base: 1.12.4
+react: 18.3.1
+react-dom: 18.3.1
+react-table: 7.8.0

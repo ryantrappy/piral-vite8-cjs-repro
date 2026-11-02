@@ -1,0 +1,4 @@
+Case D (patched plugin)
+file: evidence/case-d-patched/table-one.js
+System.register dependencies: ["react", "react-table"]
+__require calls: 0

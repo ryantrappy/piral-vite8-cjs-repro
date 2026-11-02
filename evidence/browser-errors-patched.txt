@@ -1,0 +1,29 @@
+Command: npm run test:patched
+Browser: 156.0.8078.74
+Server: Piral production build: http://127.0.0.1:4173
+Visible state: {
+  "shellHeading": "Piral Vite 8 CommonJS Reproduction",
+  "tableOneHeading": 1,
+  "tableTwoHeading": 1,
+  "employeeRows": 3,
+  "productRows": 3,
+  "employeeValues": "Alice\tDeveloper\nBob\tDesigner\nCharlie\tManager",
+  "productValues": "Keyboard\t99\nMouse\t49\nMonitor\t399",
+  "setupLogs": [
+    "console.log: [table-one] setup called",
+    "console.log: [table-two] setup called"
+  ],
+  "moduleLogs": [
+    "console.log: [table-two] module evaluated",
+    "console.log: [table-one] module evaluated"
+  ]
+}
+
+Browser console:
+  console.log: [table-two] module evaluated
+  console.log: [table-one] module evaluated
+  console.log: [table-one] setup called
+  console.log: [table-two] setup called
+
+Captured exceptions:
+  none

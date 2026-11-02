@@ -1,0 +1,21 @@
+react-table package: 7.8.0
+main: index.js
+module: (not declared)
+exports: (not declared)
+Resolved by Node: /Users/ryantrapp/Desktop/Code/piral_repro/node_modules/react-table/index.js
+Node-selected wrapper:
+1: if (process.env.NODE_ENV === 'production') {
+2:   module.exports = require('./dist/react-table.production.min.js')
+3: } else {
+4:   module.exports = require('./dist/react-table.development.js')
+5: }
+Development distribution prefix:
+1: (function (global, factory) {
+2:   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react')) :
+3:   typeof define === 'function' && define.amd ? define(['exports', 'react'], factory) :
+4:   (global = global || self, factory(global.ReactTable = {}, global.React));
+5: }(this, (function (exports, React) { 'use strict';
+CJS react require in package entry/distribution: true
+Package dependencies: {}
+Peer dependencies: {"react":"^16.8.3 || ^17.0.0-0 || ^18.0.0"}
+No package-level ESM module entry is declared; package.json routes Node and bundlers resolving the package root through index.js, which selects a CommonJS dist file based on NODE_ENV.

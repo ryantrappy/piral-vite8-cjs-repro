@@ -1,0 +1,32 @@
+Case A (shared React and React Table)
+file: pilets/table-one/dist/index.js
+System.register dependencies: ["react", "react-table"]
+__require calls: 1 (react)
+
+83: 			*/
+84: 			require_react_jsx_runtime_production_min = /* @__PURE__ */ __commonJSMin((exports) => {
+85: 				var f = __require("react");
+86: 				var k = Symbol.for("react.element");
+87: 				var m = Object.prototype.hasOwnProperty;
+
+Case B (React Table bundled)
+file: evidence/case-b-bundled/table-one.js
+System.register dependencies: ["react"]
+__require calls: 2 (react, react)
+
+73: 			require_react_table_production_min = /* @__PURE__ */ __commonJSMin((exports, module, this$1) => {
+74: 				(function(e, t) {
+75: 					"object" == typeof exports && "undefined" != typeof module ? t(exports, __require("react")) : "function" == typeof define && define.amd ? define(["exports", "react"], t) : t((e = e || self).ReactTable = {}, e.React);
+76: 				})(this$1, function(e, t) {
+77: 					"use strict";
+
+2425: 			*/
+2426: 			require_react_jsx_runtime_production_min = /* @__PURE__ */ __commonJSMin((exports) => {
+2427: 				var f = __require("react");
+2428: 				var k = Symbol.for("react.element");
+2429: 				var m = Object.prototype.hasOwnProperty;
+
+Case D (patched plugin)
+file: evidence/case-d-patched/table-one.js
+System.register dependencies: ["react", "react-table"]
+__require calls: 0

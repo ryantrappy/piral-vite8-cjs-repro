@@ -1,0 +1,27 @@
+{
+  "name": "@repro/shell",
+  "version": "1.0.0",
+  "private": true,
+  "app": "src/index.html",
+  "scripts": {
+    "build": "piral build --type release",
+    "debug": "piral debug --port 4173 --strict-port"
+  },
+  "dependencies": {
+    "piral": "1.12.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-table": "7.8.0"
+  },
+  "devDependencies": {
+    "piral-cli": "1.10.3",
+    "piral-cli-vite8": "1.0.0",
+    "typescript": "5.8.3"
+  },
+  "importmap": {
+    "imports": {
+      "react-table": "react-table"
+    },
+    "inherit": ["piral-base", "piral-core"]
+  }
+}

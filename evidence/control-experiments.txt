@@ -1,0 +1,6 @@
+Configuration | Build result | Browser result | Explanation
+--- | --- | --- | ---
+Vite 8, shared React + React Table | Success | Both pilets fail | Shared imports are in System.register; bundled JSX runtime keeps __require("react").
+Vite 8, React Table bundled | Success | Both pilets fail | Adds a second bundled CJS consumer: react-table’s UMD wrapper also requires shared React.
+Vite 8, shared React Table control | Success | Fails through jsx-runtime | React Table is external here; the same failure comes from bundled react/jsx-runtime.
+Vite 8 with esmExternalRequirePlugin patch | Success | Both tables render three rows | Plugin turns external CJS requires into SystemJS-resolvable ESM dependencies.

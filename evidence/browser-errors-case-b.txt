@@ -1,0 +1,62 @@
+Command: npm run test:repro
+Browser: 156.0.8078.74
+Server: Piral production build: http://127.0.0.1:4173
+Visible state: {
+  "shellHeading": "Piral Vite 8 CommonJS Reproduction",
+  "tableOneHeading": 0,
+  "tableTwoHeading": 0,
+  "employeeRows": 0,
+  "productRows": 0,
+  "employeeValues": "",
+  "productValues": "",
+  "setupLogs": [],
+  "moduleLogs": []
+}
+
+Browser console:
+  console.error: Failed to load SystemJS module /pilets/table-one/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-one/index.js:71:11
+    at http://127.0.0.1:4173/pilets/table-one/index.js:75:78
+    at http://127.0.0.1:4173/pilets/table-one/index.js:76:7
+    at http://127.0.0.1:4173/pilets/table-one/index.js:68:48
+    at http://127.0.0.1:4173/pilets/table-one/index.js:2415:22
+    at http://127.0.0.1:4173/pilets/table-one/index.js:68:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-one/index.js:2459:25)
+    at a (http://127.0.0.1:4173/index.DztX4MgX.js:1:23790)
+    at O (http://127.0.0.1:4173/index.DztX4MgX.js:1:23761)
+    at http://127.0.0.1:4173/index.DztX4MgX.js:1:23423
+  console.error: Failed to load SystemJS module /pilets/table-two/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-two/index.js:71:11
+    at http://127.0.0.1:4173/pilets/table-two/index.js:75:78
+    at http://127.0.0.1:4173/pilets/table-two/index.js:76:7
+    at http://127.0.0.1:4173/pilets/table-two/index.js:68:48
+    at http://127.0.0.1:4173/pilets/table-two/index.js:2415:22
+    at http://127.0.0.1:4173/pilets/table-two/index.js:68:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-two/index.js:2459:25)
+    at a (http://127.0.0.1:4173/index.DztX4MgX.js:1:23790)
+    at O (http://127.0.0.1:4173/index.DztX4MgX.js:1:23761)
+    at http://127.0.0.1:4173/index.DztX4MgX.js:1:23423
+
+Captured exceptions:
+  console.error: Failed to load SystemJS module /pilets/table-one/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-one/index.js:71:11
+    at http://127.0.0.1:4173/pilets/table-one/index.js:75:78
+    at http://127.0.0.1:4173/pilets/table-one/index.js:76:7
+    at http://127.0.0.1:4173/pilets/table-one/index.js:68:48
+    at http://127.0.0.1:4173/pilets/table-one/index.js:2415:22
+    at http://127.0.0.1:4173/pilets/table-one/index.js:68:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-one/index.js:2459:25)
+    at a (http://127.0.0.1:4173/index.DztX4MgX.js:1:23790)
+    at O (http://127.0.0.1:4173/index.DztX4MgX.js:1:23761)
+    at http://127.0.0.1:4173/index.DztX4MgX.js:1:23423
+  console.error: Failed to load SystemJS module /pilets/table-two/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-two/index.js:71:11
+    at http://127.0.0.1:4173/pilets/table-two/index.js:75:78
+    at http://127.0.0.1:4173/pilets/table-two/index.js:76:7
+    at http://127.0.0.1:4173/pilets/table-two/index.js:68:48
+    at http://127.0.0.1:4173/pilets/table-two/index.js:2415:22
+    at http://127.0.0.1:4173/pilets/table-two/index.js:68:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-two/index.js:2459:25)
+    at a (http://127.0.0.1:4173/index.DztX4MgX.js:1:23790)
+    at O (http://127.0.0.1:4173/index.DztX4MgX.js:1:23761)
+    at http://127.0.0.1:4173/index.DztX4MgX.js:1:23423

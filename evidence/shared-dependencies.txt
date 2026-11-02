@@ -1,0 +1,42 @@
+Shell package importmap:
+{
+  "imports": {
+    "react-table": "react-table"
+  },
+  "inherit": [
+    "piral-base",
+    "piral-core"
+  ]
+}
+
+Pilet inheritance:
+{
+  "inherit": [
+    "@repro/shell"
+  ]
+}
+
+Shell production HTML exists: true
+Shell generated shared module registrations:
+e[`react-table`]=ha,e[`react-table@7.8.0`]=ha,e.tslib=f,e[`tslib@2.9.1`]=f,e.react=R,e[`react@18.3.1`]=R,e[`react-dom`]=Tn,e[`react-dom@18.3.1`]=Tn,e[`react-router`]=ti,e[`react-router@5.3.4`]=ti,e[`react-router-dom`]=Ki,e[`react-router-dom
+
+Feed metadata:
+[
+  {
+    "name": "table-one",
+    "version": "1.0.0",
+    "spec": "v2",
+    "link": "/pilets/table-one/index.js",
+    "dependencies": {},
+    "config": {}
+  },
+  {
+    "name": "table-two",
+    "version": "1.0.0",
+    "spec": "v2",
+    "link": "/pilets/table-two/index.js",
+    "dependencies": {},
+    "config": {}
+  }
+]
+

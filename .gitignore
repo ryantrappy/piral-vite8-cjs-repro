@@ -1,0 +1,5 @@
+node_modules/
+**/dist/
+apps/shell/src/public/feed.json
+apps/shell/src/public/pilets/
+.DS_Store

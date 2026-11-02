@@ -1,0 +1,78 @@
+Command: npm run test:repro
+Browser: 156.0.8078.74
+Server: using http://127.0.0.1:4173
+Visible state: {
+  "shellHeading": "Piral Vite 8 CommonJS Reproduction",
+  "tableOneHeading": 0,
+  "tableTwoHeading": 0,
+  "employeeRows": 0,
+  "productRows": 0,
+  "employeeValues": "",
+  "productValues": "",
+  "setupLogs": [],
+  "moduleLogs": []
+}
+
+Browser console:
+  console.info: %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+  console.startGroup: %c Piral State Change %c 6:59:49 PM color: gray; font-weight: lighter; color: black; font-weight: bold;
+  console.log: %c Previous color: #9E9E9E; font-weight: bold {app: Object, components: Object, errorComponents: Object, registry: Object, routes: Object}
+  console.log: %c Action color: #03A9F4; font-weight: bold dispatch (http://127.0.0.1:4173/index.DAbheUWw.js:28969:86)
+  console.log: %c Next color: #4CAF50; font-weight: bold {app: Object, components: Object, errorComponents: Object, registry: Object, routes: Object}
+  console.endGroup: console.groupEnd
+  console.error: Failed to load SystemJS module /pilets/table-two/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-two/index.js:73:11
+    at http://127.0.0.1:4173/pilets/table-two/index.js:85:13
+    at http://127.0.0.1:4173/pilets/table-two/index.js:70:48
+    at http://127.0.0.1:4173/pilets/table-two/index.js:115:22
+    at http://127.0.0.1:4173/pilets/table-two/index.js:70:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-two/index.js:117:25)
+    at doExec (http://127.0.0.1:4173/index.DAbheUWw.js:2495:28)
+    at postOrderExec (http://127.0.0.1:4173/index.DAbheUWw.js:2492:10)
+    at http://127.0.0.1:4173/index.DAbheUWw.js:2464:11
+    at async Promise.all (index 1)
+  console.error: Failed to load SystemJS module /pilets/table-one/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-one/index.js:73:11
+    at http://127.0.0.1:4173/pilets/table-one/index.js:85:13
+    at http://127.0.0.1:4173/pilets/table-one/index.js:70:48
+    at http://127.0.0.1:4173/pilets/table-one/index.js:115:22
+    at http://127.0.0.1:4173/pilets/table-one/index.js:70:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-one/index.js:117:25)
+    at doExec (http://127.0.0.1:4173/index.DAbheUWw.js:2495:28)
+    at postOrderExec (http://127.0.0.1:4173/index.DAbheUWw.js:2492:10)
+    at http://127.0.0.1:4173/index.DAbheUWw.js:2464:11
+    at async Promise.all (index 0)
+  console.startGroup: %c Piral State Change %c 6:59:49 PM color: gray; font-weight: lighter; color: black; font-weight: bold;
+  console.log: %c Previous color: #9E9E9E; font-weight: bold {app: Object, components: Object, errorComponents: Object, registry: Object, routes: Object}
+  console.log: %c Action color: #03A9F4; font-weight: bold dispatch (http://127.0.0.1:4173/index.DAbheUWw.js:28969:86)
+  console.log: %c Next color: #4CAF50; font-weight: bold {app: Object, components: Object, errorComponents: Object, registry: Object, routes: Object}
+  console.endGroup: console.groupEnd
+  console.startGroup: %c Piral State Change %c 6:59:49 PM color: gray; font-weight: lighter; color: black; font-weight: bold;
+  console.log: %c Previous color: #9E9E9E; font-weight: bold {app: Object, components: Object, errorComponents: Object, registry: Object, routes: Object}
+  console.log: %c Action color: #03A9F4; font-weight: bold dispatch (http://127.0.0.1:4173/index.DAbheUWw.js:28969:86)
+  console.log: %c Next color: #4CAF50; font-weight: bold {app: Object, components: Object, errorComponents: Object, registry: Object, routes: Object}
+  console.endGroup: console.groupEnd
+
+Captured exceptions:
+  console.error: Failed to load SystemJS module /pilets/table-two/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-two/index.js:73:11
+    at http://127.0.0.1:4173/pilets/table-two/index.js:85:13
+    at http://127.0.0.1:4173/pilets/table-two/index.js:70:48
+    at http://127.0.0.1:4173/pilets/table-two/index.js:115:22
+    at http://127.0.0.1:4173/pilets/table-two/index.js:70:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-two/index.js:117:25)
+    at doExec (http://127.0.0.1:4173/index.DAbheUWw.js:2495:28)
+    at postOrderExec (http://127.0.0.1:4173/index.DAbheUWw.js:2492:10)
+    at http://127.0.0.1:4173/index.DAbheUWw.js:2464:11
+    at async Promise.all (index 1)
+  console.error: Failed to load SystemJS module /pilets/table-one/index.js Error: Calling `require` for "react" in an environment that doesn't expose the `require` function. See https://rolldown.rs/in-depth/bundling-cjs#require-external-modules for more details.
+    at http://127.0.0.1:4173/pilets/table-one/index.js:73:11
+    at http://127.0.0.1:4173/pilets/table-one/index.js:85:13
+    at http://127.0.0.1:4173/pilets/table-one/index.js:70:48
+    at http://127.0.0.1:4173/pilets/table-one/index.js:115:22
+    at http://127.0.0.1:4173/pilets/table-one/index.js:70:48
+    at Object.execute (http://127.0.0.1:4173/pilets/table-one/index.js:117:25)
+    at doExec (http://127.0.0.1:4173/index.DAbheUWw.js:2495:28)
+    at postOrderExec (http://127.0.0.1:4173/index.DAbheUWw.js:2492:10)
+    at http://127.0.0.1:4173/index.DAbheUWw.js:2464:11
+    at async Promise.all (index 0)
