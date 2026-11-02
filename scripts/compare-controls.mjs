@@ -28,36 +28,30 @@ async function buildPilets(label) {
   }
 }
 
-async function browser(label) {
-  run('npm', ['run', 'test:repro'], root);
-  // browser-repro uses a named filename when the case selector is set
-}
-
 await mkdir(resolve(evidence, 'case-b-bundled'), { recursive: true });
 await mkdir(resolve(evidence, 'case-d-patched'), { recursive: true });
 try {
   const unshared = JSON.parse(shellPackageOriginal);
   delete unshared.importmap.imports['react-table'];
   await writeFile(shellPackage, JSON.stringify(unshared, null, 2) + '\n');
+  console.log('Building control: React Table bundled, React shared.');
   await buildPilets('case-b-bundled');
-  process.env.REPRO_CASE = 'case-b';
-  await browser('case-b');
 
   await writeFile(shellPackage, shellPackageOriginal);
-  let patched = pluginOriginal;
-  patched = `import { esmExternalRequirePlugin } from 'vite';\n${patched}`;
+  let patched = `import { esmExternalRequirePlugin } from 'vite';\n${pluginOriginal}`;
   patched = patched.replace('                    external,\n', '');
   patched = patched.replace('            plugins: [\n                ...config.plugins,', '            plugins: [\n                esmExternalRequirePlugin({ external }),\n                ...config.plugins,');
   if (!patched.includes('esmExternalRequirePlugin({ external })') || patched.includes('                    external,\n')) {
-    throw new Error('Could not apply the documented experimental Vite 8 plugin patch cleanly');
+    throw new Error('Could not apply the documented Vite 8 plugin patch cleanly');
   }
   await writeFile(pluginFile, patched);
+  console.log('Building control: esmExternalRequirePlugin patch.');
   await buildPilets('case-d-patched');
-  process.env.REPRO_CASE = 'patched';
-  await browser('patched');
 } finally {
   await writeFile(shellPackage, shellPackageOriginal);
   await writeFile(pluginFile, pluginOriginal);
   for (const name of names) await writeFile(resolve(root, `pilets/${name}/dist/index.js`), originalPiletBundles.get(name));
   run('node', ['scripts/assemble-feed.mjs']);
 }
+
+console.log('Control bundles saved under evidence/. Browser outcomes are recorded in the committed browser logs.');

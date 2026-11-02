@@ -18,13 +18,10 @@
     "inspect": "node scripts/inspect-bundles.mjs",
     "inspect:patched": "REPRO_PILET_DIR=dist/patched node scripts/inspect-bundles.mjs",
     "versions": "node scripts/versions.mjs",
-    "test:repro": "node scripts/browser-repro.mjs",
-    "test:patched": "REPRO_CASE=patched REPRO_SHELL_DIST=apps/shell/dist/patched/release node scripts/browser-repro.mjs",
     "compare:controls": "node scripts/compare-controls.mjs",
     "record:evidence": "node scripts/record-evidence.mjs"
   },
   "devDependencies": {
-    "playwright": "1.64.1",
     "rolldown": "1.2.15"
   }
 }

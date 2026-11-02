@@ -1,4 +1,4 @@
-Command: npm run test:patched
+Capture: Browser execution against the patched production Piral build
 Browser: 156.0.8078.74
 Server: Piral production build: http://127.0.0.1:4173
 Visible state: {

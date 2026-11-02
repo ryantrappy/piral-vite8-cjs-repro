@@ -1,4 +1,4 @@
-Command: npm run test:repro
+Capture: Browser execution against the Piral development server
 Browser: 156.0.8078.74
 Server: using http://127.0.0.1:4173
 Visible state: {
