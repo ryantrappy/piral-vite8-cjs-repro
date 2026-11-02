@@ -5,7 +5,6 @@ Reproduction for [Piral issue #899](https://github.com/smapiot/piral/issues/899)
 ## Run the unpatched build
 
 ```sh
-nvm use
 npm ci
 npm run build:baseline
 npm run inspect
